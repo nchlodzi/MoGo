@@ -246,6 +246,7 @@ body{
 		font-family: $Mont;
 		font-weight: 700;
 		text-transform: uppercase;
+		font-size: 1.8rem;
 	}
 }
 
@@ -257,7 +258,7 @@ body{
 
 .gray{
 	background-color: #f8f8f8;
-	padding: 5% 0;
+	padding: 2% 0;
 }
 
 .arrowLeft{
@@ -328,11 +329,11 @@ body{
 	text-align: center;
 	font-size: 0.9rem;
 	span{
-	font-family: $Roboto;
-	font-weight: 300;
-	font-style: italic;
-	text-transform: none;
-	color: #bdbdbd;
+		font-family: $Roboto;
+		font-weight: 300;
+		font-style: italic;
+		text-transform: none;
+		color: #bdbdbd;
 	}
 }
 
@@ -443,4 +444,355 @@ body{
 
 .bottomPeople{
 	padding-top: 5%;
+}
+
+.blog2{
+	padding: 5% 0 8% 0;
+}
+
+.blogFirst{
+	background-image: url('../images/blog_1.jpg');
+	width: 90%;
+	@include rwd_image(389px, 257px);
+	margin-left: 5%;
+	padding-bottom: 50%
+}
+
+.blogSecond{
+	background-image: url('../images/blog_2.jpg');
+	width: 90%;
+	@include rwd_image(389px, 257px);
+	margin-left: 5%;
+	padding-bottom: 50%
+}
+
+.blogThird{
+	background-image: url('../images/blog_3.jpg');
+	width: 90%;
+	@include rwd_image(389px, 257px);
+	margin-left: 5%;
+	padding-bottom: 50%
+}
+
+.bgDateFirst{
+	background-image: url('../images/dateBg.jpg');
+	width: 15%;
+	@include rwd_image(60px, 70px);
+	padding-bottom: 20%;
+	margin-top: -20%;
+	margin-left: 1%;
+}
+
+.bgDateSecond{
+	background-image: url('../images/dateBg.jpg');
+	width: 15%;
+	@include rwd_image(60px, 70px);
+	padding-bottom: 20%;
+	margin-top: -20%;
+	margin-left: 1%;
+}
+
+.bgDateThird{
+	background-image: url('../images/dateBg.jpg');
+	width: 15%;
+	@include rwd_image(60px, 70px);
+	padding-bottom: 20%;
+	margin-top: -20%;
+	margin-left: 1%;
+}
+
+.date{
+	font-family: $Mont;
+	font-weight: bold;
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 0.9rem;
+	padding-top: 28%;
+	span{
+		font-family: $Roboto;
+		font-weight: 300;
+		font-style: italic;
+		font-size: 1rem;
+	}
+}
+
+.textBlog{
+	font-family: $Roboto;
+	color: #999999;
+	margin-left: 5%;
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+	width: 90%;
+	margin-top: 3%;
+	padding-bottom: 4%;
+	border-bottom: 1px solid #e5e5e5;
+	span{
+		font-family: $Mont;
+		text-transform: uppercase;
+		color: #484848;
+		font-size: 0.9rem;
+		line-height: 2.2rem;
+	}
+}
+
+.view{
+	float: left;
+	padding-top: 4.5%;
+	margin-left: 5%;
+}
+
+.viewNumber{
+	float: left;
+	padding-top: 4%;
+	font-family: $Roboto;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 0.9rem;
+	margin-left: 1%;
+	color: #cacaca;
+}
+
+.comment{
+	float: left;
+	padding-top: 4.5%;
+	margin-left: 5%;
+}
+
+.commentNumber{
+	float: left;
+	padding-top: 4%;
+	font-family: $Roboto;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 0.9rem;
+	margin-left: 1%;
+	color: #cacaca;
+}
+
+.horizontalBreak{
+	background-image: url('../images/horizont_break.png');
+	width: 100%;
+	@include rwd_image(1920px, 200px);
+}
+
+.break{
+	padding: 3% 0;
+}
+
+.location{
+	margin: 0 auto;
+	display: block;
+}
+
+.openMap{
+	font-family: $Mont;
+	font-weight: bold;
+	color: #f38180;
+	margin: 1% auto;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+.footer{
+	padding: 5% 0;
+	background-color: #f8f8f8;
+}
+
+.logoGray{
+	background-image: url('../images/logo_gray.png');
+	width: 30%;
+	@include rwd_image(131px, 34px);
+	padding-bottom: 10%;
+}
+
+.logoGrayP{
+	font-family: $Roboto;
+	color: #9a9a9a;
+	width: 95%;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin-top: 7%;
+}
+
+.followers{
+	font-family: $Mont;
+	font-size: 0.9rem;
+	padding-top: 5%;
+	padding-bottom: 3%;
+	border-bottom: 1px solid #e5e5e5;
+	width: 90%;
+	span{
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+}
+
+.follow{
+	list-style-decoration: none;
+	font-family: $Roboto;
+	font-style: italic;
+	font-weight: 300;
+	color: #a7a7a7;
+	font-size: 0.95rem;
+	margin: 2% 0 8% 0;
+	li{
+		display: inline-block;
+		margin-left: 3%;
+		margin-top: 3%;
+	}
+}
+
+input{
+	padding: 2%;
+	width: 45%;
+	font-family: $Roboto;
+	font-style: italic;
+	font-weight: 300;
+	border: 1px solid #e7e7e7;
+}
+
+::-webkit-input-placeholder{
+	color: #d6d6d6;
+}
+
+::-moz-placeholder{
+	color: #d6d6d6;
+}
+
+::-ms-input-placeholder{
+	color: #d6d6d6;
+}
+
+:-moz-placeholder{
+	color:#d6d6d6;
+}
+
+button{
+	background-color: #95e1d4;
+	font-family: $Mont;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	border: 1px solid #95e1d4;
+	padding: 2% 8%;
+	margin-left: -1%;
+}
+
+.blogTitle{
+	font-family: $Mont;
+	text-transform: uppercase;
+	font-size: 1rem;
+	margin-bottom: 10%;
+}
+
+.photoBlog1{
+	background-image: url('../images/photoBlog1.png');
+	width: 95%;
+	@include rwd_image(119px, 79px);
+	margin-bottom: 25%;
+}
+
+.photoBlog2{
+	background-image: url('../images/photoBlog2.png');
+	width: 95%;
+	@include rwd_image(119px, 79px);
+	margin-bottom: 25%;
+}
+
+.photoBlog3{
+	background-image: url('../images/photoBlog3.png');
+	width: 95%;
+	@include rwd_image(119px, 79px);
+}
+
+.textPhotoBlog{
+	font-family: $Mont;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	margin-top: 7%;
+	line-height: 1.1rem;
+	width: 80%;
+	margin-left: 5%;
+}
+
+.datePhotoBlog{
+	font-family: $Mont;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 0.8rem;
+	color: #bababa;
+	margin-top: 2%;
+	margin-left: 5%;
+}
+
+.instagram{
+	font-family: $Mont;
+	text-transform: uppercase;
+	font-size: 1rem;
+	margin-bottom: 13%;
+}
+
+.instPhoto1{
+	background-image: url('../images/instPhoto1.jpg');
+	width: 98%;
+	@include rwd_image(88px, 88px);
+}
+
+.instPhoto2{
+	background-image: url('../images/instPhoto2.jpg');
+	width: 98%;
+	@include rwd_image(88px, 88px);
+}
+
+.instPhoto3{
+	background-image: url('../images/instPhoto3.jpg');
+	width: 98%;
+	@include rwd_image(88px, 88px);
+}
+
+.instPhoto4{
+	background-image: url('../images/instPhoto4.jpg');
+	width: 98%;
+	@include rwd_image(88px, 88px);
+}
+
+.instPhoto5{
+	background-image: url('../images/instPhoto5.jpg');
+	width: 98%;
+	@include rwd_image(88px, 88px);
+}
+
+.instPhoto6{
+	background-image: url('../images/instPhoto6.jpg');
+	width: 98%;
+	@include rwd_image(88px, 88px);
+}
+
+.instPhoto7{
+	background-image: url('../images/instPhoto7.jpg');
+	width: 98%;
+	@include rwd_image(88px, 88px);
+}
+
+.instPhoto8{
+	background-image: url('../images/instPhoto8.jpg');
+	width: 98%;
+	@include rwd_image(88px, 88px);
+}
+
+.instPhoto9{
+	background-image: url('../images/instPhoto9.jpg');
+	width: 98%;
+	@include rwd_image(88px, 88px);
+}
+
+.morePhotos{
+	font-family: $Mont;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 0.8rem;
+	margin-top: 5%;
+	color: #919191;
 }
