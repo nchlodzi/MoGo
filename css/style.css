@@ -146,19 +146,6 @@ body {
   padding-bottom: 10px;
 }
 
-.about {
-  font-family: "Kaushan Script", cursive;
-  text-align: center;
-  font-size: 1.4rem;
-  padding: 6% 0 2% 0;
-}
-
-.about span {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .border2 {
   display: block;
   margin: 0 auto;
@@ -175,37 +162,140 @@ body {
 
 .computer {
   background-image: url("../images/computer.jpg");
-  width: 92%;
+  width: 93%;
   background-size: 100% auto;
   height: 0;
   padding-bottom: 66.41026%;
   display: block;
   background-repeat: no-repeat;
-  margin-left: 4%;
+  margin-left: 5%;
   margin-bottom: 20%;
+  position: relative;
+}
+
+.computer:hover {
+  margin-top: -2%;
+  left: -2%;
+}
+
+.computer:hover:before {
+  background-image: url("../images/hover_1.png");
+  width: 100%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 66.41026%;
+  display: block;
+  background-repeat: no-repeat;
+  content: "";
+  zoom: 1;
+  opacity: 0.9;
+}
+
+.bgTurq1 {
+  background-image: url("../images/turquoiseBg.jpg");
+  width: 93%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 66.41026%;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 5%;
+  margin-top: -84%;
+  position: relative;
+  z-index: -1;
+  display: none;
 }
 
 .headphones {
   background-image: url("../images/headphones.jpg");
-  width: 92%;
+  width: 93%;
   background-size: 100% auto;
   height: 0;
   padding-bottom: 66.41026%;
   display: block;
   background-repeat: no-repeat;
-  margin-left: 2%;
+  margin-left: 5%;
   margin-bottom: 20%;
+  position: relative;
+}
+
+.headphones:hover {
+  margin-top: -2%;
+  left: -2%;
+}
+
+.headphones:hover:before {
+  background-image: url("../images/hover_1.png");
+  width: 100%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 66.41026%;
+  display: block;
+  background-repeat: no-repeat;
+  content: "";
+  zoom: 1;
+  opacity: 0.9;
+}
+
+.bgTurq2 {
+  background-image: url("../images/turquoiseBg.jpg");
+  width: 93%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 66.41026%;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 5%;
+  margin-top: -84%;
+  position: relative;
+  z-index: -1;
+  display: none;
 }
 
 .desk {
   background-image: url("../images/desk.jpg");
-  width: 92%;
+  width: 93%;
   background-size: 100% auto;
   height: 0;
   padding-bottom: 66.41026%;
   display: block;
   background-repeat: no-repeat;
   margin-bottom: 20%;
+  margin-left: 5%;
+  position: relative;
+}
+
+.desk:hover {
+  margin-top: -2%;
+  left: -2%;
+}
+
+.desk:hover:before {
+  background-image: url("../images/hover_1.png");
+  width: 100%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 66.41026%;
+  display: block;
+  background-repeat: no-repeat;
+  content: "";
+  zoom: 1;
+  opacity: 0.9;
+}
+
+.bgTurq3 {
+  background-image: url("../images/turquoiseBg.jpg");
+  width: 93%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 66.41026%;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 5%;
+  margin-top: -84%;
+  position: relative;
+  z-index: -1;
+  display: none;
 }
 
 .turquoise {
@@ -238,17 +328,9 @@ body {
   border-left: 1px solid #fff;
 }
 
-.services {
-  font-family: "Kaushan Script", cursive;
-  text-align: center;
-  font-size: 1.4rem;
-  padding: 6% 0 2% 0;
-}
-
-.services span {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
+.upper {
+  padding-top: 1%;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .subServices {
@@ -258,13 +340,15 @@ body {
 .subServices img {
   float: left;
   margin-right: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 9%;
+  margin-left: 5%;
+  padding-top: 1%;
 }
 
 .subServices .title {
   font-family: "Roboto", sans-serif;
   color: #9f9f9f;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   width: 80%;
   line-height: 1.2rem;
 }
@@ -273,13 +357,14 @@ body {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #333333;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   display: inline-block;
   margin-bottom: 2%;
 }
 
 .servicesTotal {
-  padding-bottom: 3%;
+  padding-bottom: 5%;
+  padding-top: 1%;
 }
 
 .grayBackground {
@@ -290,19 +375,6 @@ body {
   padding-bottom: 44.27083%;
   display: block;
   background-repeat: no-repeat;
-}
-
-.design {
-  font-family: "Kaushan Script", cursive;
-  text-align: center;
-  font-size: 1.4rem;
-  padding: 6% 0 2% 0;
-}
-
-.design span {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .phoneWhite {
@@ -318,18 +390,21 @@ body {
   margin-top: 15%;
 }
 
-.service {
+.sectionTitle {
   font-family: "Kaushan Script", cursive;
   text-align: center;
   font-size: 1.4rem;
   padding: 6% 0 2% 0;
+  color: #333333;
 }
 
-.service span {
+.sectionTitle span {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.8rem;
+  padding-top: 0.8%;
+  display: block;
 }
 
 .photoLeft {
@@ -399,6 +474,115 @@ body {
   padding-bottom: 124.39678%;
   display: block;
   background-repeat: no-repeat;
+  margin-left: 2%;
+  position: relative;
+}
+
+.firstTeamPerson:hover {
+  margin-top: -2%;
+  left: -2%;
+}
+
+.firstTeamPerson:hover:before {
+  background-image: url("../images/hover_2.png");
+  width: 100%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 124.39678%;
+  display: block;
+  background-repeat: no-repeat;
+  content: "";
+  zoom: 1;
+  opacity: 0.9;
+}
+
+.yellowRectangle {
+  background-image: url("../images/yellow-rectangle.png");
+  width: 55%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 25%;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 20%;
+  margin-top: -72%;
+  position: relative;
+  z-index: 100;
+}
+
+.facebook {
+  background-image: url("../images/facebook.png");
+  width: 5%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 200%;
+  display: block;
+  background-repeat: no-repeat;
+  padding-bottom: 10%;
+  margin-left: 25%;
+  margin-top: -23.5%;
+  position: relative;
+  z-index: 101;
+}
+
+.twitter {
+  background-image: url("../images/twitter.png");
+  width: 7%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 200%;
+  display: block;
+  background-repeat: no-repeat;
+  padding-bottom: 10%;
+  margin-left: 35%;
+  margin-top: -7.5%;
+  position: relative;
+  z-index: 101;
+}
+
+.pinterest {
+  background-image: url("../images/pinterest.png");
+  width: 7%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 200%;
+  display: block;
+  background-repeat: no-repeat;
+  padding-bottom: 10%;
+  margin-left: 50%;
+  margin-top: -11.5%;
+  position: relative;
+  z-index: 101;
+}
+
+.instagram {
+  background-image: url("../images/instagram.png");
+  width: 7%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 200%;
+  display: block;
+  background-repeat: no-repeat;
+  padding-bottom: 10%;
+  margin-left: 60%;
+  margin-top: -9.5%;
+  position: relative;
+  z-index: 101;
+}
+
+.bgTurqBig1 {
+  background-image: url("../images/turquoiseBg2.jpg");
+  width: 95%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 124.39678%;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 2%;
+  margin-top: -75%;
+  position: relative;
+  z-index: -1;
+  display: none;
 }
 
 .secondTeamPerson {
@@ -409,6 +593,40 @@ body {
   padding-bottom: 124.39678%;
   display: block;
   background-repeat: no-repeat;
+  margin-left: 3.5%;
+}
+
+.secondTeamPerson:hover {
+  margin-top: -2%;
+  margin-left: 1%;
+}
+
+.secondTeamPerson:hover:before {
+  background-image: url("../images/hover_2.png");
+  width: 100%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 124.39678%;
+  display: block;
+  background-repeat: no-repeat;
+  content: "";
+  zoom: 1;
+  opacity: 0.9;
+}
+
+.bgTurqBig2 {
+  background-image: url("../images/turquoiseBg2.jpg");
+  width: 95%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 124.39678%;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 3.3%;
+  margin-top: -122%;
+  position: relative;
+  z-index: -1;
+  display: none;
 }
 
 .thirdTeamPerson {
@@ -419,6 +637,40 @@ body {
   padding-bottom: 124.39678%;
   display: block;
   background-repeat: no-repeat;
+  margin-left: 5%;
+}
+
+.thirdTeamPerson:hover {
+  margin-top: -2%;
+  margin-left: 3%;
+}
+
+.thirdTeamPerson:hover:before {
+  background-image: url("../images/hover_2.png");
+  width: 100%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 124.39678%;
+  display: block;
+  background-repeat: no-repeat;
+  content: "";
+  zoom: 1;
+  opacity: 0.9;
+}
+
+.bgTurqBig3 {
+  background-image: url("../images/turquoiseBg2.jpg");
+  width: 95%;
+  background-size: 100% auto;
+  height: 0;
+  padding-bottom: 124.39678%;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 5%;
+  margin-top: -122%;
+  position: relative;
+  z-index: -1;
+  display: none;
 }
 
 .personName {
@@ -448,7 +700,7 @@ body {
   padding-bottom: 10.77184%;
   display: block;
   background-repeat: no-repeat;
-  margin: 5% 0;
+  margin: 2% 0;
 }
 
 .detail_1 {
