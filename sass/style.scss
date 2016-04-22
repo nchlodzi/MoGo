@@ -1337,6 +1337,14 @@ $width3: 96% / 5;
 	margin-bottom: 10%;
 }
 
+.viewSecond{
+	position: relative;
+}
+
+.viewThird{
+	position: relative;
+}
+
 .logos{
 	background-image: url('../images/logos_banner.png');
 	width: 100%;
@@ -1384,6 +1392,129 @@ $width3: 96% / 5;
 	background-image: url('../images/images/MoGo_FREE_Template_by_Laaqiq_08.jpg');
 	width: 100%;
 	@include rwd_image(480px, 390px);
+}
+
+.hoverPhoto2{
+	background-image: url('../images/hover_3.png');
+	width: 100%;
+	@include rwd_image(480px, 390px);
+	content: "";
+	zoom: 1;
+	opacity: 0;
+	display: block;
+	margin-top: -81%;
+	position: relative;
+	z-index: 100;
+}
+.hoverView{
+	width: 7%;
+	position: absolute;
+	top: 39%;
+	left: 45%;
+	z-index: 101;
+	opacity: 0;
+}
+
+.hoverText{
+	font-family: $Mont;
+	color: #fff;
+	font-size: 0.6rem;
+	position: absolute;
+	top: 53%;
+	left: 25%;
+	z-index: 101;
+	text-transform: uppercase;
+	opacity: 0;
+}
+
+.hoverP{
+	font-family: $Roboto;
+	font-weight: 300;
+	font-style: italic;
+	color: #fff;
+	font-size: 0.6rem;
+	position: absolute;
+	top: 61%;
+	left: 30%;
+	z-index: 101;
+	opacity: 0;
+}
+
+.viewSecond:hover{
+	.hoverPhoto2{
+		opacity: 0.9;
+	}
+	.hoverView{
+		opacity: 1;
+	}
+	.hoverText{
+		opacity: 1;
+	}
+	.hoverP{
+		opacity: 1;
+	}
+}
+
+.hoverPhoto3{
+	background-image: url('../images/hover_4.png');
+	width: 100%;
+	@include rwd_image(480px, 780px);
+	content: "";
+	zoom: 1;
+	opacity: 0;
+	display: block;
+	margin-top: -162.5%;
+	position: relative;
+	z-index: 100;
+}
+
+.hoverView2{
+	width: 7%;
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	z-index: 101;
+	opacity: 0;
+}
+
+.hoverText2{
+	font-family: $Mont;
+	color: #fff;
+	font-size: 0.6rem;
+	position: absolute;
+	top: 53%;
+	left: 25%;
+	z-index: 101;
+	text-transform: uppercase;
+	opacity: 0;
+}
+
+.hoverP2{
+	font-family: $Roboto;
+	font-weight: 300;
+	font-style: italic;
+	color: #fff;
+	font-size: 0.6rem;
+	position: absolute;
+	top: 58%;
+	left: 30%;
+	z-index: 101;
+	opacity: 0;
+}
+
+.viewThird:hover{
+	.hoverPhoto3{
+		opacity: 0.9;
+	}
+	.hoverView2{
+		opacity: 1;
+	}
+	.hoverText2{
+		opacity: 1;
+	}
+	.hoverP2{
+		opacity: 1;
+	}
 }
 
 .pictureSlid{
