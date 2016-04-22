@@ -5,22 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MoGo</title>
 	<link href="css/style.css" rel="stylesheet"/>
+	<link href="css/fontello.css" rel="stylesheet"/>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,300,300italic,700,900|Kaushan+Script' rel='stylesheet' type='text/css'>
 	<script src="js/jquery-2.2.1.min.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body>
-	<div class="headerImg">
+	<div class="headerImg" id="topOfPage">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<img class="logo" src="images/logo_white.png" />
 					<ul class="menu">
-						<li>About</li>
-						<li>Service</li>
-						<li>Work</li>
-						<li>Blog</li>
-						<li>Contact</li>
+						<li><a href="#About">About</a></li>
+						<li><a href="#Service">Service</a></li>
+						<li><a href="#Work">Work</a></li>
+						<li><a href="#Blog">Blog</a></li>
+						<li><a href="#Contact">Contact</a></li>
 						<li><img src="images/cart.png"/></li>
 						<li><img src="images/magnifying_glass.png" /></li>
 					</ul>
@@ -37,7 +38,29 @@
 			</div>
 		</div>
 	</div>
-	<div class="container about" id="about">
+	<div class="hamburger">
+		<div class="col-6">
+			<img class="menu2" src="images/navburger_1_2.jpg" />
+			<ul class="menu">
+				<li><a href="#About">About</a></li>
+				<li><a href="#Service">Service</a></li>
+				<li><a href="#Work">Work</a></li>
+				<li><a href="#Blog">Blog</a></li>
+				<li><a href="#Contact">Contact</a></li>
+				<li><img src="images/cart.png"/></li>
+				<li><img src="images/magnifying_glass.png" /></li>
+			</ul>
+		</div>
+	</div>
+	<div class="scrollUp">
+		<div class="col-3">
+			<a href="#topOfPage">
+				<img class="arrowUpNav" src="images/arrow-up_nav.png" />
+			</a>
+		</div>
+	</div>
+
+	<div class="container about" id="About">
 		<div class="row">
 			<div class="col-12">
 				<div class="sectionTitle">
@@ -81,7 +104,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container servicesTotal">
+	<div class="container servicesTotal" id="Service">
 		<div class="row">
 			<div class="col-12">
 				<div class="sectionTitle">
@@ -239,63 +262,93 @@
 				<p class="aboutP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet vel augue a eleifend. Maecenas ullamcorper magna quis cursus viverra. Donec viverra lorem lorem, nec maximus orci laoreet a.</p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-4">
+		<div class="row peopleBreak">
+			<div class="col-4 view1">
 				<div class="firstTeamPerson"></div>
-				<div class="yellowRectangle">
-					<div class="col-3">
-						<img class="facebook" src="images/facebook_peach.png" />
-					</div>
-					<div class="col-3">
-						<img class="twitter" src="images/twitter.png" />
-					</div>
-					<div class="col-3">
-						<img class="pinterest" src="images/pinterest.png" />
-					</div>
-					<div class="col-3">
-						<img class="instagram2" src="images/instagram.png" />
-					</div>
-				
-				</div>
+				<div class="hoverPhoto"></div>
+				<ul class="linksOnHover">
+					<li>
+						<a href="https://www.facebook.com" target="_blank">
+							<i class="icon-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com" target="_blank">
+							<i class="icon-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://pl.pinterest.com" target="_blank">
+							<i class="icon-pinterest"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/" target="_blank">
+							<i class="icon-instagram"></i>
+						</a>
+					</li>
+				</ul>
 				<div class="bgTurqBig1"></div>
 				<div class="personName">
 					Matthew Dix</br><span>Graphic Design</span>
 				</div>
 
 			</div>
-			<div class="col-4">
+			<div class="col-4 view2">
 				<div class="secondTeamPerson"></div>
-				<div class="hoverPhoto">
-					<ul class="linksOnHover">
-						<li>
-							<div class="col-3">
-								<img class="facebook" src="images/facebook_peach.png" />
-							</div>
-						</li>
-						<li>
-							<div class="col-3">
-								<img class="twitter" src="images/twitter.png" />
-							</div>
-						</li>
-						<li>
-							<div class="col-3">
-								<img class="pinterest" src="images/pinterest.png" />
-							</div>
-						</li>
-						<li>
-							<div class="col-3">
-								<img class="instagram2" src="images/instagram.png" />
-							</div>
-						</li>
-					</ul>
-				</div>
+				<div class="hoverPhoto"></div>
+				<ul class="linksOnHover">
+					<li>
+						<a href="https://www.facebook.com" target="_blank">
+							<i class="icon-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com" target="_blank">
+							<i class="icon-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://pl.pinterest.com" target="_blank">
+							<i class="icon-pinterest"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/" target="_blank">
+							<i class="icon-instagram"></i>
+						</a>
+					</li>
+				</ul>
 				<div class="bgTurqBig2"></div>
 				<div class="personName">
 					Christopher Campbell</br><span>Branding/UX design</span>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-4 view3">
 				<div class="thirdTeamPerson"></div>
+				<div class="hoverPhoto"></div>
+				<ul class="linksOnHover">
+					<li>
+						<a href="https://www.facebook.com" target="_blank">
+							<i class="icon-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com" target="_blank">
+							<i class="icon-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://pl.pinterest.com" target="_blank">
+							<i class="icon-pinterest"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/" target="_blank">
+							<i class="icon-instagram"></i>
+						</a>
+					</li>
+				</ul>
 				<div class="bgTurqBig3"></div>
 				<div class="personName">
 					Michael Fertig</br><span>Developer</span>
@@ -310,7 +363,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container" id="Work">
 		<div class="row">
 			<div class="col-12">
 				<div class="sectionTitle">
@@ -324,15 +377,15 @@
 	<div class="row">
 		<div class="col-6">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-6 viewSecond">
 					<div class="detail_1"></div>
 				</div>
-				<div class="col-6">
+				<div class="col-6 viewSecond">
 					<div class="detail_2"></div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-6">
+				<div class="col-6 viewSecond">
 					<div class="detail_3"></div>
 				</div>
 				<div class="col-6">
@@ -341,21 +394,21 @@
 			</div>
 		</div>
 		<div class="col-6">
-			<div class="col-6">
+			<div class="col-6 viewThird">
 				<div class="detail_5"></div>
 			</div>
 			<div class="col-6">
-				<div class="row">
+				<div class="row viewSecond">
 					<div class="detail_6"></div>
 				</div>
-				<div class="row">
+				<div class="row viewSecond">
 					<div class="detail_7"></div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row slider3">
-		<div class="container ">
+		<div class="container">
 			<div class="col-12">
 				<div class="col-1">
 					<img class="arrowLeft2" src="images/arrowLeft.png" />
@@ -438,7 +491,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container"  id="Blog">
 		<div class="row">
 			<div class="col-12">
 				<div class="sectionTitle">
@@ -501,7 +554,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="row footer">
+	<div class="row footer" id="Contact">
 		<div class="container">	
 			<div class="col-12">
 				<div class="col-5 break">

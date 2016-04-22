@@ -108,6 +108,11 @@ body {
   margin-left: 7%;
 }
 
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media (max-width: 1140px) {
   .menu li {
     margin-left: 6%;
@@ -136,6 +141,76 @@ body {
   .menu li {
     margin-left: 2%;
   }
+}
+
+@media (max-width: 685px) {
+  .menu {
+    display: none;
+  }
+}
+
+.hamburger .menu2 {
+  position: fixed;
+  top: 5px;
+  right: 7px;
+  width: 100px;
+  cursor: pointer;
+  z-index: 200;
+  display: none;
+}
+
+.hamburger .menu {
+  display: none;
+  z-index: 100;
+  background-color: #95e1d4;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 35px;
+  right: 7px;
+}
+
+.hamburger .menu li {
+  color: #fff;
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  border-top: 1px solid #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hamburger .menu li:hover {
+  font-weight: bold;
+}
+
+.hamburger .menu li a {
+  color: #fff;
+}
+
+.hamburger .menu li img {
+  width: 15%;
+}
+
+.hamburger .menu li img:hover {
+  width: 20%;
+}
+
+@media (max-width: 685px) {
+  .hamburger .menu2 {
+    display: block;
+  }
+}
+
+.arrowUpNav {
+  width: 60px;
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  z-index: 200;
+  display: none;
 }
 
 .welcome {
@@ -214,13 +289,45 @@ body {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 690px) {
   .welcome {
+    padding-top: 0;
     font-size: 2rem;
   }
   .welcome span {
     font-size: 4rem;
     line-height: 3rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .welcome {
+    margin-top: -5%;
+  }
+  .welcome span {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .welcome {
+    font-size: 1.5rem;
+  }
+  .welcome span {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .welcome {
+    margin-top: -2%;
+    font-size: 1rem;
+  }
+  .welcome span {
+    font-size: 1.5rem;
+    line-height: 1.3rem;
   }
 }
 
@@ -436,10 +543,11 @@ body {
 .numbers li {
   display: inline-block;
   padding: 7% 0;
-  border-right: 1px solid #fff;
+  border-right: 1px solid #b6e9e0;
   letter-spacing: 1px;
   width: 19.6%;
   box-sizing: border-box;
+  vertical-align: middle;
 }
 
 .numbers li span {
@@ -448,7 +556,7 @@ body {
 }
 
 .numbers:first-child {
-  border-left: 1px solid #fff;
+  border-left: 1px solid #b6e9e0;
 }
 
 @media (max-width: 800px) {
@@ -457,9 +565,21 @@ body {
   }
 }
 
-@media (max-width: 707px) {
+@media (max-width: 545px) {
   .numbers li {
-    padding: 5% 0;
+    width: 19.2%;
+  }
+  .numbers li span {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .numbers {
+    font-size: 0.5rem;
+  }
+  .numbers li span {
+    font-size: 1.7rem;
   }
 }
 
@@ -956,36 +1076,6 @@ body {
   font-size: 1.2rem;
 }
 
-.firstTeamPerson {
-  background-image: url("../images/person_1.jpg");
-  width: 95%;
-  background-size: 100% auto;
-  height: 0;
-  padding-bottom: 124.39678%;
-  display: block;
-  background-repeat: no-repeat;
-  margin-left: 2%;
-  position: relative;
-}
-
-.firstTeamPerson:hover {
-  margin-top: -2%;
-  left: -2%;
-}
-
-.firstTeamPerson:hover:before {
-  background-image: url("../images/hover_2.png");
-  width: 100%;
-  background-size: 100% auto;
-  height: 0;
-  padding-bottom: 124.39678%;
-  display: block;
-  background-repeat: no-repeat;
-  content: "";
-  zoom: 1;
-  opacity: 0.9;
-}
-
 .hoverPhoto {
   background-image: url("../images/hover_2.png");
   width: 95%;
@@ -996,92 +1086,138 @@ body {
   background-repeat: no-repeat;
   content: "";
   zoom: 1;
-  opacity: 0.9;
-  display: none;
+  opacity: 0;
+  display: block;
   margin-top: -124.5%;
   margin-left: 1%;
   position: relative;
   z-index: 100;
 }
 
-.hoverPhoto .linksOnHover {
+.linksOnHover {
   position: absolute;
-  top: 40%;
-  left: 35%;
+  top: 35%;
+  left: 20%;
   list-style-decoration: none;
   z-index: 101;
+  width: 250px;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.hoverPhoto .linksOnHover li {
+.linksOnHover li {
+  margin: 0 -2.2px;
   display: inline-block;
-  border-right: 1px solid #fabd87;
+  border-right: 1px solid #f38181;
   background-color: #fce389;
+  padding: 15px 10px 10px 10px;
 }
 
-.hoverPhoto .linksOnHover li:hover {
+.linksOnHover li:hover {
   background-color: #f38181;
 }
 
-.yellowRectangle {
-  background-image: url("../images/yellow-rectangle.png");
-  width: 55%;
+.linksOnHover li a {
+  color: #f38181;
+  font-size: 1.8rem;
+}
+
+.linksOnHover li a:hover {
+  color: #fff;
+}
+
+@media (max-width: 1130px) {
+  .linksOnHover {
+    left: 15%;
+  }
+}
+
+@media (max-width: 960px) {
+  .linksOnHover {
+    left: 10%;
+  }
+}
+
+@media (max-width: 910px) {
+  .linksOnHover {
+    left: 20%;
+  }
+}
+
+@media (max-width: 760px) {
+  .linksOnHover {
+    left: 15%;
+  }
+}
+
+@media (max-width: 650px) {
+  .linksOnHover {
+    left: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .linksOnHover {
+    left: 5%;
+  }
+}
+
+@media (max-width: 560px) {
+  .linksOnHover {
+    left: 20%;
+  }
+}
+
+@media (max-width: 510px) {
+  .linksOnHover {
+    left: 15%;
+  }
+}
+
+@media (max-width: 470px) {
+  .linksOnHover {
+    left: 10%;
+  }
+}
+
+@media (max-width: 430px) {
+  .linksOnHover {
+    left: 5%;
+  }
+}
+
+@media (max-width: 420px) {
+  .linksOnHover {
+    left: 15%;
+  }
+}
+
+@media (max-width: 380px) {
+  .linksOnHover {
+    left: 10%;
+  }
+}
+
+@media (max-width: 340px) {
+  .linksOnHover {
+    left: 7%;
+  }
+}
+
+.view1 {
+  position: relative;
+}
+
+.firstTeamPerson {
+  background-image: url("../images/person_1.jpg");
+  width: 95%;
   background-size: 100% auto;
   height: 0;
-  padding-bottom: 25%;
+  padding-bottom: 124.39678%;
   display: block;
   background-repeat: no-repeat;
-  padding-bottom: 15%;
-  margin-left: 20%;
-  margin-top: -74%;
-  margin-bottom: 40%;
-  position: relative;
-  z-index: 100;
-}
-
-.yellowRectangle .col-3 {
-  border-right: 1px solid #fabd87;
-  box-sizing: border-box;
-  z-index: 101;
-}
-
-.yellowRectangle .col-3:hover {
-  background-color: #f38181;
-}
-
-.yellowRectangle .facebook {
-  margin: auto;
-  display: block;
-  padding-top: 25%;
-  padding-bottom: 27%;
-  background-color: #fce389;
-}
-
-.yellowRectangle .facebook:hover {
-  background-color: #f38181;
-}
-
-.yellowRectangle .twitter {
-  margin: auto;
-  display: block;
-  padding-top: 33%;
-  padding-bottom: 27%;
-  background-color: #fce389;
-}
-
-.yellowRectangle .pinterest {
-  margin: auto;
-  display: block;
-  padding-top: 27%;
-  padding-bottom: 27%;
-  background-color: #fce389;
-}
-
-.yellowRectangle .instagram2 {
-  margin: auto;
-  display: block;
-  padding-top: 25%;
-  padding-bottom: 27%;
-  background-color: #fce389;
+  margin-left: 3.5%;
 }
 
 .bgTurqBig1 {
@@ -1092,11 +1228,28 @@ body {
   padding-bottom: 124.39678%;
   display: block;
   background-repeat: no-repeat;
-  margin-left: 2%;
-  margin-top: -75%;
+  margin-left: 3%;
+  margin-top: -122%;
   position: relative;
   z-index: -1;
   display: none;
+}
+
+.view1:hover .firstTeamPerson {
+  margin-top: -2%;
+  margin-left: 1%;
+}
+
+.view1:hover .hoverPhoto {
+  opacity: 0.9;
+}
+
+.view1:hover .linksOnHover {
+  opacity: 1;
+}
+
+.view2 {
+  position: relative;
 }
 
 .secondTeamPerson {
@@ -1108,47 +1261,6 @@ body {
   display: block;
   background-repeat: no-repeat;
   margin-left: 3.5%;
-}
-
-.secondTeamPerson:hover {
-  margin-top: -2%;
-  margin-left: 1%;
-}
-
-.hoverPhoto {
-  background-image: url("../images/hover_2.png");
-  width: 95%;
-  background-size: 100% auto;
-  height: 0;
-  padding-bottom: 124.39678%;
-  display: block;
-  background-repeat: no-repeat;
-  content: "";
-  zoom: 1;
-  opacity: 0.9;
-  display: none;
-  margin-top: -124.5%;
-  margin-left: 1%;
-  position: relative;
-  z-index: 100;
-}
-
-.hoverPhoto .linksOnHover {
-  position: absolute;
-  top: 40%;
-  left: 35%;
-  list-style-decoration: none;
-  z-index: 101;
-}
-
-.hoverPhoto .linksOnHover li {
-  display: inline-block;
-  border-right: 1px solid #fabd87;
-  background-color: #fce389;
-}
-
-.hoverPhoto .linksOnHover li:hover {
-  background-color: #f38181;
 }
 
 .bgTurqBig2 {
@@ -1166,6 +1278,23 @@ body {
   display: none;
 }
 
+.view2:hover .secondTeamPerson {
+  margin-top: -2%;
+  margin-left: 1%;
+}
+
+.view2:hover .hoverPhoto {
+  opacity: 0.9;
+}
+
+.view2:hover .linksOnHover {
+  opacity: 1;
+}
+
+.view3 {
+  position: relative;
+}
+
 .thirdTeamPerson {
   background-image: url("../images/person_3.jpg");
   width: 95%;
@@ -1177,24 +1306,6 @@ body {
   margin-left: 5%;
 }
 
-.thirdTeamPerson:hover {
-  margin-top: -2%;
-  margin-left: 3%;
-}
-
-.thirdTeamPerson:hover:before {
-  background-image: url("../images/hover_2.png");
-  width: 100%;
-  background-size: 100% auto;
-  height: 0;
-  padding-bottom: 124.39678%;
-  display: block;
-  background-repeat: no-repeat;
-  content: "";
-  zoom: 1;
-  opacity: 0.9;
-}
-
 .bgTurqBig3 {
   background-image: url("../images/turquoiseBg2.jpg");
   width: 95%;
@@ -1203,11 +1314,24 @@ body {
   padding-bottom: 124.39678%;
   display: block;
   background-repeat: no-repeat;
-  margin-left: 5%;
+  margin-left: 3.3%;
   margin-top: -122%;
   position: relative;
   z-index: -1;
   display: none;
+}
+
+.view3:hover .linksOnHover {
+  opacity: 1;
+}
+
+.view3:hover .hoverPhoto {
+  opacity: 0.9;
+}
+
+.view3:hover .thirdTeamPerson {
+  margin-top: -2%;
+  margin-left: 1%;
 }
 
 .personName {
@@ -1223,6 +1347,28 @@ body {
   font-style: italic;
   text-transform: none;
   color: #bdbdbd;
+}
+
+@media (max-width: 910px) {
+  .peopleBreak .col-4 {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 560px) {
+  .peopleBreak .col-4 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 420px) {
+  .peopleBreak .col-4 {
+    width: 90%;
+  }
 }
 
 .servicesTotal2 {
