@@ -304,20 +304,29 @@ body{
 	}
 }
 
+.firstAbout{
+	.button{
+		text-transform: uppercase;
+		text-align: center;
+		border: 4px solid #fff;
+		color: #fff;
+		width: 158px;
+		font-size: 0.9rem;
+		font-weight: bold;
+		font-family: $Mont;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+		&:hover{
+			background-color: #fff;
+			color: #eec688;
+		}
+	}
+}
 
-.button{
-	text-transform: uppercase;
-	text-align: center;
-	border: 4px solid #fff;
-	color: #fff;
-	width: 158px;
-	font-size: 0.9rem;
-	font-weight: bold;
-	font-family: $Mont;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
 
 .border2{
@@ -777,11 +786,17 @@ $width3: 96% / 5;
 		font-size: 1rem;
 		padding: 2%;
 		margin: 0;
-		overflow: auto;
+		overflow-y: scroll;
+		overflow-x: hidden;
 		border: 1px solid #e5e5e5;
-		height: 160px;
+		height: 160px;	
+		overflow: auto;
+		width: 90%;
+		padding-right: 7.7%;
 	}
 }
+
+
 
 @media (max-width: 1200px){
 	.twoPart{
@@ -902,46 +917,23 @@ $width3: 96% / 5;
 	}
 }
 
-
-// p::-webkit-scrollbar {	
-//     width: 20px;
-// }
-// p::-webkit-scrollbar-track {
-//    	color: #f5f5f5; 
-//     border-radius: 10px;
-// }
-// p::-webkit-scrollbar-thumb {
-//     border-radius: 10px;
-//  	color: #95e1d4; 
-// }
-
-
 .gray{
 	background-color: #f8f8f8;
 	padding: 2% 0;
 }
 
-.arrowLeft{
-	float: left;
-	margin-top: 85%;
-	margin-left: 30%;
-}
-
-.arrowRight{
-	float: right;
-	margin-top: 85%;
-	margin-right: 30%
-}
-
 .pictureSlider{
-	margin: 5% 0 5% 5%;
+	margin: 5% 15% 5% 5%;
 	float: left;
 	width: 90%;
 }
 
 .textSlider{
 	margin-left: 5%;
-	float: left;
+	float: left;	
+	li{
+		list-style-decoration: none;
+	}
 }
 
 @media (max-width: 840px){
@@ -949,60 +941,21 @@ $width3: 96% / 5;
 		width: 80%;
 		margin-top: 15%;
 	}
-	.textSlider{
-		margin-left: 0;
-	}
 }
 
 @media (max-width: 670px){
 	.pictureSlider{
+		margin-top: 25%;
+		margin-bottom: 30%;
+	}
+}
+
+@media (max-width: 550px){
+	.pictureSlider{
 		margin-top: 30%;
-	}
-	.arrowRight{
-		margin-top: 100%;
-	}
-	.arrowLeft{
-		margin-top: 100%;
+		margin-bottom: 50%;
 	}
 }
-
-@media (max-width: 500px){
-	.pictureSlider{
-		margin-top: 40%;
-	}
-	.arrowRight{
-		margin-top: 140%;
-	}
-	.arrowLeft{
-		margin-top: 140%;
-	}
-}
-
-@media (max-width: 440px){
-	.pictureSlider{
-		display: none;
-	}
-	.arrowRight{
-		margin-top: 160%;
-	}
-	.arrowLeft{
-		margin-top: 160%;
-	}
-	.textSlider{
-		width: 120%;
-		margin-left: -20%;
-	}
-}
-
-@media (max-width: 370px){
-	.arrowRight{
-		padding-top: 100%;
-	}
-	.arrowLeft{
-		padding-top: 100%;
-	}
-}
-
 
 .sliderP{
 	font-family: $Roboto;
@@ -1011,6 +964,9 @@ $width3: 96% / 5;
 	color: #999999;
 	line-height: 2rem;
 	font-size: 1.4rem;
+	width: 70%;
+	margin-left: 18%;
+	display: block;
 }
 
 @media (max-width: 970px){
@@ -1027,16 +983,17 @@ $width3: 96% / 5;
 	}
 }
 
+@media (max-width: 480px){
+	.sliderP{
+		width: 70%;
+		margin-left: 7%;
+	}
+}
 
 .border3{
 	float: left;
-	margin-top: 2%;
-}
-
-@media (max-width: 840px){
-	.border3{
-		margin-top: 1%;
-	}
+	margin-top: 1%;
+	margin-left: 1.5%;
 }
 
 .personSlider{
@@ -1044,6 +1001,12 @@ $width3: 96% / 5;
 	font-family: $Kaushan;
 	margin-left: 2%;
 	font-size: 1.2rem;
+}
+
+@media (max-width: 480px){
+	.personSlider{
+		margin-left: 6%;
+	}
 }
 
 .hoverPhoto{
@@ -1166,7 +1129,6 @@ $width3: 96% / 5;
 		left: 7%;
 	}
 }
-
 
 .view1{
 	position: relative;
@@ -1402,7 +1364,7 @@ $width3: 96% / 5;
 	zoom: 1;
 	opacity: 0;
 	display: block;
-	margin-top: -81%;
+	margin-top: -81.3%;
 	position: relative;
 	z-index: 100;
 }
@@ -1410,7 +1372,10 @@ $width3: 96% / 5;
 	width: 7%;
 	position: absolute;
 	top: 39%;
-	left: 45%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	z-index: 101;
 	opacity: 0;
 }
@@ -1421,7 +1386,11 @@ $width3: 96% / 5;
 	font-size: 0.6rem;
 	position: absolute;
 	top: 53%;
-	left: 25%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	z-index: 101;
 	text-transform: uppercase;
 	opacity: 0;
@@ -1435,7 +1404,11 @@ $width3: 96% / 5;
 	font-size: 0.6rem;
 	position: absolute;
 	top: 61%;
-	left: 30%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	z-index: 101;
 	opacity: 0;
 }
@@ -1472,7 +1445,10 @@ $width3: 96% / 5;
 	width: 7%;
 	position: absolute;
 	top: 45%;
-	left: 45%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	z-index: 101;
 	opacity: 0;
 }
@@ -1483,7 +1459,11 @@ $width3: 96% / 5;
 	font-size: 0.6rem;
 	position: absolute;
 	top: 53%;
-	left: 25%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	z-index: 101;
 	text-transform: uppercase;
 	opacity: 0;
@@ -1497,7 +1477,11 @@ $width3: 96% / 5;
 	font-size: 0.6rem;
 	position: absolute;
 	top: 58%;
-	left: 30%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	z-index: 101;
 	opacity: 0;
 }
@@ -1524,9 +1508,17 @@ $width3: 96% / 5;
 	width: 90%;
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
 	.pictureSlid{
-		margin-top: 20%;
+		margin-top: 10%;
+		margin-bottom: 20%;
+	}
+}
+
+@media (max-width: 710px){
+	.pictureSlid{
+		margin-top: 15%;
+		margin-bottom: 50%;
 	}
 }
 
@@ -1541,6 +1533,7 @@ $width3: 96% / 5;
 	color: #999999;
 	line-height: 2rem;
 	font-size: 1.4rem;
+	width: 87%;
 }
 
 @media (max-width: 930px){
@@ -1565,6 +1558,13 @@ $width3: 96% / 5;
 	}
 }
 
+@media (max-width: 480px){
+	.sliderP2{
+		width: 80%;
+		margin-left: 6%;
+	}
+}
+
 .personSlider2{
 	float: left;
 	font-family: $Kaushan;
@@ -1572,47 +1572,11 @@ $width3: 96% / 5;
 	font-size: 1.2rem;
 }
 
-.arrowLeft2{
-	float: left;
-	margin-top: 70%;
-	margin-left: 30%;
-}
-
-
-.arrowRight2{
-	float: right;
-	margin-top: 70%;
-	margin-right: 30%
-}
-
-@media (max-width: 800px){
-	.arrowLeft2{
-		margin-top: 100%;
-	}
-	.arrowRight2{
-		margin-top: 100%;
+@media (max-width: 480px){
+	.personSlider2{
+		margin-left: 5%;
 	}
 }
-
-@media (max-width: 450px){
-	.pictureSlid{
-		display: none;
-	}
-	.arrowLeft2{
-		margin-top: 200%;
-	}
-	.arrowRight2{
-		margin-top: 200%;
-	}
-	.slider3{
-		.col-8{
-			width: 75%;
-			margin-left: -13%;
-		}
-	}
-}
-
-
 
 .whatPeopleSay{
 	background-image: url('../images/grayMountain.jpg');
@@ -2210,7 +2174,10 @@ button{
 	font-weight: 300;
 	font-size: 0.8rem;
 	margin-top: 5%;
-	color: #919191;
+	a{
+		text-decoration: none;
+		color: #919191;
+	}
 }
 
 @media (max-width: 900px){

@@ -6,8 +6,11 @@
 	<title>MoGo</title>
 	<link href="css/style.css" rel="stylesheet"/>
 	<link href="css/fontello.css" rel="stylesheet"/>
+	<link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,300,300italic,700,900|Kaushan+Script' rel='stylesheet' type='text/css'>
 	<script src="js/jquery-2.2.1.min.js"></script>
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="jquery.bxslider/jquery.bxslider.min.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body>
@@ -27,13 +30,17 @@
 					</ul>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row buttonRow">
 				<div class="col-12">
 					<div class="welcome">
 						Creative Template</br><span>Welcome</br>&nbsp;to MoGo</span>
 					</div>
 					<img class="borderHeader" src="images/white_border.png" />
-					<div class="button">Learn more</div>
+					<a class="firstAbout" href="#About">
+						<div class="button">
+							Learn more
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -233,22 +240,48 @@
 	<div class="row gray">
 		<div class="container">
 			<div class="col-12">
-				<div class="col-1">
-					<img class="arrowLeft" src="images/arrowLeft.png" />
-				</div>
-				<div class="col-2">
-					<img class="pictureSlider" src="images/speach.png" />
-				</div>	
-				<div class="col-8">
-					<div class="textSlider">
+				<ul class="textSlider bxslider">
+					<li>
+						<div class="col-2">
+							<img class="pictureSlider" src="images/speach.png" />
+						</div>
 						<p class="sliderP">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra lorem lorem, nec maximus orci laoreet a. Suspendisse laoreet vel augue a eleifend. Praesent id blandit neque."</p>
 						<img class="border3" src="images/horizontal_border.png">
 						<div class="personSlider">Jon Doe</div>
-					</div>
-				</div>
-				<div class="col-1">
-					<img class="arrowRight" src="images/arrowRight.png" />
-				</div>
+					</li>
+					<li>
+						<div class="col-2">
+							<img class="pictureSlider" src="images/speach.png" />
+						</div>
+						<p class="sliderP">"Morbi fermentum odio vel mollis gravida. Aenean sed sapien et elit porta egestas. Mauris tempus dignissim turpis, blandit blandit sapien varius nec."</p>
+						<img class="border3" src="images/horizontal_border.png">
+						<div class="personSlider">Jon Doe</div>
+					</li>
+					<li>
+						<div class="col-2">
+							<img class="pictureSlider" src="images/speach.png" />
+						</div>
+						<p class="sliderP">"Donec id justo eu sem condimentum in at erat. Praesent lacus libero, vehicula non, cursus ut justo. Vivamus venenatis metus volutpat, et ultrices risus gravida. "</p>
+						<img class="border3" src="images/horizontal_border.png">
+						<div class="personSlider">Jon Doe</div>
+					</li>
+					<li>
+						<div class="col-2">
+							<img class="pictureSlider" src="images/speach.png" />
+						</div>
+						<p class="sliderP">"Donec auctor commodo purus, et consequat nisl suscipit nec. Morbi at urna eget ante cursus rhoncus eget eget magna. In at libero mollis, sagittis lectus eu, semper sem."</p>
+						<img class="border3" src="images/horizontal_border.png">
+						<div class="personSlider">Jon Doe</div>
+					</li>
+					<li>
+						<div class="col-2">
+							<img class="pictureSlider" src="images/speach.png" />
+						</div>
+						<p class="sliderP">"Mauris feugiat enim ac felis varius, ac viverra eros tempus. Integer sit amet nunc sagittis, malesuada dui vitae, rutrum velit. Sed pulvinar quis est rutrum consequat."</p>
+						<img class="border3" src="images/horizontal_border.png">
+						<div class="personSlider">Jon Doe</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -438,20 +471,40 @@
 	<div class="row slider3">
 		<div class="container">
 			<div class="col-12">
-				<div class="col-1">
-					<img class="arrowLeft2" src="images/arrowLeft.png" />
-				</div>
-				<div class="col-2">
-					<img class="pictureSlid" src="images/joshua.jpg" />
-				</div>	
-				<div class="col-8">
-					<p class="sliderP2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra lorem lorem, nec maximus orci laoreet a. Suspendisse laoreet vel augue a eleifend. Praesent id blandit neque."</p>
-					<img class="border4" src="images/horizontal_border.png">
-					<div class="personSlider2">Joshua Earle</div>
-				</div>
-				<div class="col-1">
-					<img class="arrowRight2" src="images/arrowRight.png" />
-				</div>
+				<ul class="textSlider bxslider">
+					<li>
+						<div class="col-2">
+							<img class="pictureSlid" src="images/joshua.jpg" />
+						</div>
+						<p class="sliderP2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra lorem lorem, nec maximus orci laoreet a. Suspendisse laoreet vel augue a eleifend. Praesent id blandit neque."</p>
+						<img class="border4" src="images/horizontal_border.png">
+						<div class="personSlider2">Joshua Earle</div>
+					</li>
+					<li>
+						<div class="col-2">
+							<img class="pictureSlid" src="images/joshua.jpg" />
+						</div>
+						<p class="sliderP2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra lorem lorem, nec maximus orci laoreet a. Suspendisse laoreet vel augue a eleifend. Praesent id blandit neque."</p>
+						<img class="border4" src="images/horizontal_border.png">
+						<div class="personSlider2">Joshua Earle</div>
+					</li>
+					<li>
+						<div class="col-2">
+							<img class="pictureSlid" src="images/joshua.jpg" />
+						</div>
+						<p class="sliderP2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra lorem lorem, nec maximus orci laoreet a. Suspendisse laoreet vel augue a eleifend. Praesent id blandit neque."</p>
+						<img class="border4" src="images/horizontal_border.png">
+						<div class="personSlider2">Joshua Earle</div>
+					</li>
+					<li>
+						<div class="col-2">
+							<img class="pictureSlid" src="images/joshua.jpg" />
+						</div>
+						<p class="sliderP2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra lorem lorem, nec maximus orci laoreet a. Suspendisse laoreet vel augue a eleifend. Praesent id blandit neque."</p>
+						<img class="border4" src="images/horizontal_border.png">
+						<div class="personSlider2">Joshua Earle</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -590,14 +643,46 @@
 					<p class="logoGrayP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue finibus, vel mattis augue tristique nec. Suspendisse urna pharetra efficitur. Vestibulum egestas feugiat scelerisque. Suspendisse quis nunc vitae elit id vitae risus.</p>
 					<div class="followers"><span>15k</span> followers</div>
 					<ul class="follow">Follow us:
-						<li><img src="images/fb.png"/></li>
-						<li><img src="images/tw.png"/></li>
-						<li><img src="images/inst.png"/></li>
-						<li><img src="images/pntr.png"/></li>
-						<li><img src="images/gPlus.png"/></li>
-						<li><img src="images/yt.png"/></li>
-						<li><img src="images/dribbble.png"/></li>
-						<li><img src="images/tumbir.png"/></li>
+						<li>
+							<a href="https://www.facebook.com" target="_blank">
+								<img src="images/fb.png"/>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com" target="_blank">
+								<img src="images/tw.png"/>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/" target="_blank">
+								<img src="images/inst.png"/>
+							</a>
+						</li>
+						<li>
+							<a href="https://pl.pinterest.com" target="_blank">
+								<img src="images/pntr.png"/>
+							</a>
+						</li>
+						<li>
+							<a href="https://plus.google.com/" target="_blank">
+								<img src="images/gPlus.png"/>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/" target="_blank">
+								<img src="images/yt.png"/>
+							</a>
+						</li>
+						<li>
+							<a href="https://dribbble.com/" target="_blank">
+								<img src="images/dribbble.png"/>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.tumblr.com/" target="_blank">
+								<img src="images/tumbir.png"/>
+							</a>
+						</li>
 					</ul>
 					<input type="text" name="email" placeholder="YourEmail..."></input>
 					<button>Subscribe</button>
@@ -673,7 +758,11 @@
 							<div class="instPhoto9"></div>
 						</div>
 					</div>
-					<div class="morePhotos">View more photos</div>
+					<div class="morePhotos">
+						<a href="https://www.instagram.com/" target="_blank">
+							View more photos
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

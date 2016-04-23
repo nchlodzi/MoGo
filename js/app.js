@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 	function odsylacz(){
 
-		$('.menu, .scrollUp').find('a').on('click', function(){
+		$('.menu, .scrollUp, .buttonRow').find('a').on('click', function(){
 
 		    var href = $(this).attr('href');
 
@@ -108,6 +108,7 @@ $(document).ready(function(){
 
 	secondHovers();
 
+
 	function accordion(){
 
 		$('.accordion p:not(:first)').hide();
@@ -115,19 +116,46 @@ $(document).ready(function(){
 			$(this).next('p').slideToggle().siblings('p:visible').slideUp();
 			$(this).children('.arrow').toggle();
 			$(this).children('.arrowSecond').toggle();
-		})
+		});
 
+		$('.accordion').find('p').niceScroll({cursorcolor:"#95e1d4", autohidemode: false, cursorwidth: "7px", background: "#f5f5f5",railoffset: { top: 0, right: 0, left: -10, bottom: 0 }});
 
 	}
 
 	accordion();
 
 
-	$('.topPeople').find('.personName2').on('click', function(){
-		$(this).siblings('.peopleP').slideToggle();
-	})
+	function whatPeoplelSay(){
+
+		$('.topPeople').find('.personName2').on('click', function(){
+			if ($(window).width() < 610){
+				$(this).siblings('.peopleP').slideToggle();
+			}
+		})
+
+		if ($(window).width() > 610){
+			$('.topPeople').find('.peopleP').slideDown();
+		}
+
+	}	
+
+	whatPeoplelSay();
 
 
+	function sliderQuotes(){
+		$('.bxslider').bxSlider();	
+	}	
+		$('.bxslider').bxSlider({
+ 			nextSelector: '#slider-next',
+ 			prevSelector: '#slider-prev',
+  			nextText: '<img src="images/arrowLeft.png" height="25" width="25"/>',
+  			prevText: '<img src="images/arrowRight.png" height="25" width="25"/>',
+  			slideWidth: 1200,
+  			pager: false,
+		});
+	
+		
+	sliderQuotes();
 
 });
 
